@@ -1,0 +1,215 @@
+/*********LETRA A***********/
+/*
+
+ {3a}
+ 
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+	
+	int mat[5][5];
+	int soma = 0,l,c;
+	
+	for (l=0;l<5;l++){
+		for (c=0;c<5;c++){
+			printf("Linha [%d] Coluna [%d]",l,c);
+			scanf("%d",&mat[l][c]);
+			
+				if (l == 3){
+				printf("Linha [%d] encontrada, Coluna [%d] adicionada na variavel Soma \n",l,c);
+				soma = soma + mat[l][c];
+			}
+		}
+	}
+	printf("Soma = %d\n",soma);
+	
+	system("pause");
+	return 0;
+}*/
+
+
+
+
+
+/************LETRA B*****************/
+
+/*
+ {3b}
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+	
+	int mat[5][5];
+	int soma = 0,l,c;
+	
+	for (l=0;l<5;l++){
+		for (c=0;c<5;c++){
+			printf("Linha [%d] Coluna [%d]",l,c);
+			scanf("%d",&mat[l][c]);
+			
+				if (c == 2){
+				printf("Linha [%d], Coluna [%d] encontrada e adicionada na variavel Soma \n",l,c);
+				soma = soma + mat[l][c];
+			}
+		}
+	}
+	
+		printf("\nValores somados destacados por []\n\n");
+		for (l=0;l<5;l++){
+			for (c=0;c<5;c++){
+				if(c == 2){
+					printf("[%d]\t",mat[l][c]);
+					}
+					else
+					{
+					printf(" 0\t",mat[l][c]);
+					}
+				}
+				printf("\n");
+		}
+
+	
+	printf("Soma = %d\n",soma);
+	
+	system("pause");
+	return 0;
+}*/
+
+
+
+
+
+
+/********LETRA C************/
+
+/*3c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+	
+	int mat[5][5];
+	int soma = 0,l,c;
+	
+	for (l=0;l<5;l++){
+		for (c=0;c<5;c++){
+			printf("Linha [%d] Coluna [%d]",l,c);
+			scanf("%d",&mat[l][c]);
+			
+				if (l == c){
+				printf("Linha [%d] igual a Coluna [%d] adicionada na variavel Soma \n",l,c);
+				soma = soma + mat[l][c];
+			}
+		}
+	}
+	
+		printf("\nValores somados destacados por []\n\n");
+		for (l=0;l<5;l++){
+		for (c=0;c<5;c++){
+			if(l == c){
+				printf("[%d]\t",mat[l][c]);
+				}
+				else
+				{
+				printf(" 0\t",mat[l][c]);
+				}
+			}
+			printf("\n");
+		}
+	
+	printf("Soma = %d\n",soma);
+	
+	system("pause");
+	return 0;
+}*/
+
+
+
+
+
+
+/*********letra D**************/
+/*3d
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+	
+	int mat[5][5];
+	int soma = 0,l,c;
+	
+	for (l=0;l<5;l++){
+		for (c=0;c<5;c++){
+			printf("Linha [%d] Coluna [%d]",l,c);
+			scanf("%d",&mat[l][c]);
+			
+				if (l+c == 4){
+				printf("Linha [%d] + Coluna [%d] e igual a = %d,\nValor [%d] Armazenado na var Soma\n",l,c,l+c,mat[l][c]);
+				soma = soma + mat[l][c];
+			}
+		}
+	}
+		printf("Valores somados destacados por []\n\n");
+	for (l=0;l<5;l++){
+		for (c=0;c<5;c++){
+			if(l+c == 4){
+				printf("[%d]\t",mat[l][c]);
+				}
+				else
+				{
+				printf(" 0\t",mat[l][c]);
+				}
+			}
+			printf("\n");
+		}
+		
+	printf("Soma = %d\n",soma);
+	
+	system("pause");
+	return 0;
+}*/
+
+
+
+
+/*********letra e*******************/
+/*
+
+{3e}
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+	
+	int mat[5][5];
+	int soma = 0,l,c;
+	
+	for (l=0;l<5;l++){
+		for (c=0;c<5;c++){
+			printf("Linha [%d] Coluna [%d]",l,c);
+			scanf("%d",&mat[l][c]);
+			soma = soma + mat[l][c];
+			}
+		}
+	
+	printf("Valores somados destacados por []\n\n");
+	for (l=0;l<5;l++){
+		for (c=0;c<5;c++){
+				printf("[%d]\t",mat[l][c]);
+				}
+				printf("\n");
+			}
+
+		
+	printf("Soma = %d\n",soma);
+	
+	system("pause");
+	return 0;
+}*/
