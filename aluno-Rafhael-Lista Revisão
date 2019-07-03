@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+	/*********variaveis*********/
+	int c,d = 19,vet[20],troca;
+	
+  /*********leitura do vetor - 20 numeros inteiros*************/
+	for (c=0;c<20;c++){
+		printf("Digite 20 numeros :");
+		scanf("%d",&vet[c]);
+	}	
+	
+  /********apenas mostrao vetor antes de inverter**********/
+	printf("Vetor antes da inversao :\n");
+	for (c=0;c<20;c++){
+	printf("%d\n",vet[c]);
+	}	
+	
+	
+	/****invertendo vetor*****/
+	/****troca a primeira pos pela ultima pos e vice versa***********/
+  /*** C vai até 9 pois troca duas posições de uma vez só***/
+	for (c=0;c<10;c++){
+		troca= vet[c];
+		vet[c]= vet[d];
+		vet[d]= troca;
+		d--;
+		
+	}
+	/***imprime o vetor depois da inversao****/
+	printf("Vetor depois da inversao :\n");
+	for (c=0;c<20;c++){
+	printf("%d\n",vet[c]);
+	}	
+	
+	system("pause");
+	return 0;
+}
